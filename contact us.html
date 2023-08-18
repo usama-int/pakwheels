@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Us</title>
+</head>
+
+<header>
+
+    <div id="login-btn">
+        <button class="btn">login</button>
+        <i class="far fa-user"></i>
+
+        </div>
+
+
+</header>
+<body>
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a href="index.php" class="logo"> <span>Pak</span>wheels </a>
+    
+        <nav class="navbar">
+    
+            <a href="index.php">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="products.php">Products</a>
+            <a href="contact us.html">Contact Us</a>
+    
+    
+        </nav>
+    
+        
+    
+    </header>
+
+    <div class="login-form-container">
+
+
+        <form action="">
+        
+            <h3>Contact Us</h3> <br><br><br>
+            <input type="text" placeholder="Name" class="box"> <br> <br>
+            
+            <input type="email" placeholder="email" class="box"> <br><br>
+
+            <select id="ph">
+             
+                <option>+91</option>
+                <option>+92</option>
+                <option>+93</option>
+                <option>+94</option>
+                <option>+95</option>
+             </select>
+
+           <input type="number" placeholder="Mobile No."> <br><br>
+
+           <input type="text" placeholder="Message" class="box"> <br> <br>
+
+           
+            
+           <br><br><br><br>
+
+            <input type="submit" name= "Submit Form" value="Submit" class="btn">
+
+            
+             
+            
+        
+            
+        
+        </form>
+        
+        
+        </div>
+             
+        
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-maker-alt"></i> Lahore  </a>
+            <a href="#"> <i class="fas fa-map-maker-alt"></i>  Karachi  </a>
+            <a href="#"> <i class="fas fa-map-maker-alt"></i>  Peshawar  </a>
+            <a href="#"> <i class="fas fa-map-maker-alt"></i> Islamabad </a>
+            <a href="#"> <i class="fas fa-map-maker-alt"></i>  Multan </a>
+
+
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> home  </a>
+            <a href="about us.html"> <i class="fas fa-arrow-right"></i> About Us  </a>
+            <a href="products.html"> <i class="fas fa-arrow-right"></i> Products  </a>
+            <a href="SingleProductDetails.php"> <i class="fas fa-arrow-right"></i>Product Details </a>
+            <a href="contact us.html"> <i class="fas fa-arrow-right"></i> contact Us</a>
+
+
+        </div>
+
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-facebook-f"></i> Facebook  </a>
+            <a href="#"> <i class="fas fa-twitter"></i> Twitter  </a>
+            <a href="#"> <i class="fas fa-instagram"></i> Instagram  </a>
+            <a href="#"> <i class="fas fa-linkedin"></i> Linkedin  </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+<script>
+
+    //  for Responsive menu
+    let menu = document.querySelector('#menu-btn')
+    let navbar = document.querySelector('.navbar')
+    
+    menu.onclick = () => {
+        console.log("Clicked")
+        menu.classList.toggle('ri-close-line')
+        navbar.classList.toggle('open')
+        
+    }
+    
+    window.onscroll = () => {
+        menu.classList.remove('ri-close-line')
+        navbar.classList.remove('open')
+    }
+    
+    </script>
+</html>
+
+
